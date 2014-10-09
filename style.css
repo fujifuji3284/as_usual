@@ -8,7 +8,8 @@
 .clearfix:after {
 	content: ",";
 	display: block;
-	font-size: 0;
+	height: 0;
+	visibility: hidden;
 	clear: both;
 }
 /*ナビ設定
@@ -134,30 +135,38 @@ span#to2 {
  	width: 960px;
  	margin: auto;
  }
+ 	@media only screen and (max-width: 960px){
+ 		div#main{
+ 			width: 100%;
+ 		}
+ 	}
 h2 {
 	border-left: 5px solid #C70F0F;
 	border-bottom: 1px solid #999;
 	background-color: #F8F8F8;
 	margin: 45px 0 5px;
 	padding-left: 5px;
-	font-weight: bold;
-	font-size: 45px;
-}
-h3 {
-	font-weight: bold;
-	font-size: 30px;
+	font-size: 40px;
 }
 .wrap {
-	width: 600px;
-	margin-top: 10px;
-	padding-left: 5px;
+	width: 300px;
+	margin: 10px 10px 0 0;
+	float: left;
 }
 .wrap h3 {
+	height: 50px;
+	padding-left: 5px;
 	border-left: 5px solid #0F0FC7;
 	border-bottom: 1px solid #999;
 	background-color: #F8F8F8;
+	font-size: 1.2em;
 
 }
+	@media only screen and (max-width: 945px){
+		.wrap {
+			width: 100%;
+		}
+	}
 /*フッター設定
  ***************************************************/
  div#footer_wrap {
